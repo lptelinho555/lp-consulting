@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Luiz&nbsp;Paulo Consulting</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Luiz&nbsp;Paulo&nbsp;Consulting</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="language-switcher">
+                <li><a href="pt/contato.html">PT</a></li>
+                <li><a href="es/contacto.html">ES</a></li>
+                <li><a href="zh/contact.html">ZH</a></li>
+                <li><a href="ru/contact.html">RU</a></li>
+                <li><a href="ar/contact.html">AR</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h2>Contact</h2>
+        <p class="lead">Ready to discuss your project or request a proposal? Reach out via email, phone or the form below. Attach technical data so we can begin the analysis right away.</p>
+        <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:luizpauloalvespinto@yahoo.com.br">luizpauloalvespinto@yahoo.com.br</a></p>
+            <p><strong>Phone/WhatsApp:</strong> +55 51 99204‑0053</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true" target="_blank">linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true</a></p>
+        </div>
+        <div class="contact-form">
+            <!-- Replace YOUR_FORM_ENDPOINT with the endpoint provided by your preferred form service -->
+            <!-- 使用第三方服务发送表单；端点设置为您的电子邮件地址 -->
+            <form action="https://formsubmit.co/luizpauloalvespinto@yahoo.com.br" method="POST" enctype="multipart/form-data">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Company (optional)">
+
+                <label for="message">Project Description</label>
+                <textarea id="message" name="message" rows="6" placeholder="Describe your project and goals" required></textarea>
+
+                <label for="file">Upload Technical Data</label>
+                <input type="file" id="file" name="attachment">
+
+                <!-- Hidden honeypot field to prevent spam -->
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                <!-- Redirect after submission -->
+                <input type="hidden" name="_next" value="https://lptelinho555.github.io/consulting-site/thank-you.html">
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p class="note">This form uses a third‑party service to collect submissions. The free plan includes email notifications, file uploads, spam protection and CSV export.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Luiz Paulo Alves Pinto. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

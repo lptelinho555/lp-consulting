@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل – Luiz&nbsp;Paulo للاستشارات</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Luiz&nbsp;Paulo&nbsp;الاستشارات</a>
+            <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-controls="nav-menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="how-it-works.html">كيف يعمل</a></li>
+                <li><a href="about.html">حول</a></li>
+                <li><a href="blog.html">مدونة</a></li>
+                <li><a href="contact.html">اتصل</a></li>
+            </ul>
+            <ul class="language-switcher">
+                <li><a href="../contact.html">EN</a></li>
+                <li><a href="../pt/contato.html">PT</a></li>
+                <li><a href="../es/contacto.html">ES</a></li>
+                <li><a href="../zh/contact.html">ZH</a></li>
+                <li><a href="../ru/contact.html">RU</a></li>
+                <li><a href="contact.html">AR</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h2>اتصل</h2>
+        <p class="lead">هل أنت مستعد لمناقشة مشروعك أو طلب عرض؟ تواصل معنا عبر البريد الإلكتروني أو الهاتف أو النموذج أدناه. أرفق البيانات التقنية حتى نتمكن من بدء التحليل فورًا.</p>
+        <div class="contact-details">
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:luizpauloalvespinto@yahoo.com.br">luizpauloalvespinto@yahoo.com.br</a></p>
+            <p><strong>الهاتف/WhatsApp:</strong> +55&nbsp;51&nbsp;99204‑0053</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true" target="_blank">linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true</a></p>
+        </div>
+        <div class="contact-form">
+            <!-- نستخدم خدمة خارجية لإرسال النموذج؛ يشير endpoint إلى عنوان بريدك الإلكتروني -->
+            <form action="https://formsubmit.co/luizpauloalvespinto@yahoo.com.br" method="POST" enctype="multipart/form-data">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" placeholder="اسمك" required>
+
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+
+                <label for="company">الشركة</label>
+                <input type="text" id="company" name="company" placeholder="الشركة (اختياري)">
+
+                <label for="message">وصف المشروع</label>
+                <textarea id="message" name="message" rows="6" placeholder="صف مشروعك وأهدافك" required></textarea>
+
+                <label for="file">تحميل البيانات التقنية</label>
+                <input type="file" id="file" name="attachment">
+
+                <!-- حقل مخفي للحماية من الرسائل غير المرغوب فيها -->
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                <!-- إعادة التوجيه بعد الإرسال -->
+                <input type="hidden" name="_next" value="https://lptelinho555.github.io/consulting-site/thank-you.html">
+
+                <button type="submit">إرسال الرسالة</button>
+            </form>
+            <p class="note">يستخدم هذا النموذج خدمة خارجية لجمع الإرسالات. يشمل الخطة المجانية إشعارات البريد الإلكتروني، تحميل الملفات، الحماية من الرسائل غير المرغوب فيها وتصدير CSV.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Luiz&nbsp;Paulo&nbsp;Alves&nbsp;Pinto. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

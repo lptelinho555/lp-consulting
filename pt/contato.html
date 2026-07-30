@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato – Luiz&nbsp;Paulo Consultoria</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Luiz&nbsp;Paulo&nbsp;Consultoria</a>
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="como-funciona.html">Como Funciona</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <ul class="language-switcher">
+                <li><a href="../contact.html">EN</a></li>
+                <li><a href="../es/contacto.html">ES</a></li>
+                <li><a href="../zh/contact.html">ZH</a></li>
+                <li><a href="../ru/contact.html">RU</a></li>
+                <li><a href="../ar/contact.html">AR</a></li>
+                <li><a href="contato.html">PT</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h2>Contato</h2>
+        <p class="lead">Pronto para discutir seu projeto ou solicitar uma proposta? Entre em contato por e‑mail, telefone ou use o formulário abaixo. Anexe dados técnicos para que possamos iniciar a análise imediatamente.</p>
+        <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:luizpauloalvespinto@yahoo.com.br">luizpauloalvespinto@yahoo.com.br</a></p>
+            <p><strong>Telefone/WhatsApp:</strong> +55&nbsp;51&nbsp;99204‑0053</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true" target="_blank">linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true</a></p>
+        </div>
+        <div class="contact-form">
+            <!-- Envia o formulário usando um serviço de terceiros; o endpoint aponta para seu endereço de e‑mail -->
+            <form action="https://formsubmit.co/luizpauloalvespinto@yahoo.com.br" method="POST" enctype="multipart/form-data">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+                <label for="company">Empresa</label>
+                <input type="text" id="company" name="company" placeholder="Empresa (opcional)">
+
+                <label for="message">Descrição do Projeto</label>
+                <textarea id="message" name="message" rows="6" placeholder="Descreva seu projeto e objetivos" required></textarea>
+
+                <label for="file">Upload de Dados Técnicos</label>
+                <input type="file" id="file" name="attachment">
+
+                <!-- Campo honeypot escondido -->
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                <!-- Redirecionamento após submissão -->
+                <input type="hidden" name="_next" value="https://lptelinho555.github.io/consulting-site/thank-you.html">
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <p class="note">Este formulário utiliza um serviço de terceiros para coletar envios. O plano gratuito inclui notificações por e‑mail, uploads de arquivo, proteção contra spam e exportação CSV.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Luiz&nbsp;Paulo&nbsp;Alves&nbsp;Pinto. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

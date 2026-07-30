@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto – Luiz&nbsp;Paulo Consultoría</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Luiz&nbsp;Paulo&nbsp;Consultoría</a>
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="nav-menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="como-funciona.html">Cómo Funciona</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <ul class="language-switcher">
+                <li><a href="../contact.html">EN</a></li>
+                <li><a href="../pt/contato.html">PT</a></li>
+                <li><a href="../zh/contact.html">ZH</a></li>
+                <li><a href="../ru/contact.html">RU</a></li>
+                <li><a href="../ar/contact.html">AR</a></li>
+                <li><a href="contacto.html">ES</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h2>Contacto</h2>
+        <p class="lead">¿Listo para discutir su proyecto o solicitar una propuesta? Póngase en contacto por correo electrónico, teléfono o utilice el formulario a continuación. Adjunte datos técnicos para que podamos comenzar el análisis de inmediato.</p>
+        <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:luizpauloalvespinto@yahoo.com.br">luizpauloalvespinto@yahoo.com.br</a></p>
+            <p><strong>Teléfono/WhatsApp:</strong> +55&nbsp;51&nbsp;99204‑0053</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true" target="_blank">linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true</a></p>
+        </div>
+        <div class="contact-form">
+            <!-- Envía el formulario usando un servicio de terceros; el endpoint apunta a tu dirección de correo electrónico -->
+            <form action="https://formsubmit.co/luizpauloalvespinto@yahoo.com.br" method="POST" enctype="multipart/form-data">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Su nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Su correo electrónico" required>
+
+                <label for="company">Empresa</label>
+                <input type="text" id="company" name="company" placeholder="Empresa (opcional)">
+
+                <label for="message">Descripción del Proyecto</label>
+                <textarea id="message" name="message" rows="6" placeholder="Describa su proyecto y objetivos" required></textarea>
+
+                <label for="file">Subir Datos Técnicos</label>
+                <input type="file" id="file" name="attachment">
+
+                <!-- Campo honeypot oculto para evitar spam -->
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                <!-- Redirección tras la entrega -->
+                <input type="hidden" name="_next" value="https://lptelinho555.github.io/consulting-site/thank-you.html">
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <p class="note">Este formulario utiliza un servicio de terceros para recopilar envíos. El plan gratuito incluye notificaciones por correo electrónico, carga de archivos, protección contra spam y exportación en CSV.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Luiz&nbsp;Paulo&nbsp;Alves&nbsp;Pinto. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

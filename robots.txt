@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lptelinho555.github.io/consulting-site/sitemap.xml

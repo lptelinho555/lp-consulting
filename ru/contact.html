@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты – Luiz&nbsp;Paulo Консалтинг</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Luiz&nbsp;Paulo&nbsp;Консалтинг</a>
+            <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-controls="nav-menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="how-it-works.html">Как работает</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+            <ul class="language-switcher">
+                <li><a href="../contact.html">EN</a></li>
+                <li><a href="../pt/contato.html">PT</a></li>
+                <li><a href="../es/contacto.html">ES</a></li>
+                <li><a href="../zh/contact.html">ZH</a></li>
+                <li><a href="contact.html">RU</a></li>
+                <li><a href="../ar/contact.html">AR</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h2>Контакты</h2>
+        <p class="lead">Готовы обсудить ваш проект или запросить предложение? Свяжитесь с нами по электронной почте, телефону или через форму ниже. Прикрепите технические данные, чтобы мы могли сразу приступить к анализу.</p>
+        <div class="contact-details">
+            <p><strong>Электронная почта:</strong> <a href="mailto:luizpauloalvespinto@yahoo.com.br">luizpauloalvespinto@yahoo.com.br</a></p>
+            <p><strong>Телефон/WhatsApp:</strong> +55&nbsp;51&nbsp;99204‑0053</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true" target="_blank">linkedin.com/in/luiz-paulo-alves-pinto-2a052499/?skipRedirect=true</a></p>
+        </div>
+        <div class="contact-form">
+            <!-- Используем сторонний сервис для отправки формы; endpoint указывает на ваш адрес электронной почты -->
+            <form action="https://formsubmit.co/luizpauloalvespinto@yahoo.com.br" method="POST" enctype="multipart/form-data">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+
+                <label for="company">Компания</label>
+                <input type="text" id="company" name="company" placeholder="Компания (опционально)">
+
+                <label for="message">Описание проекта</label>
+                <textarea id="message" name="message" rows="6" placeholder="Опишите ваш проект и цели" required></textarea>
+
+                <label for="file">Загрузить технические данные</label>
+                <input type="file" id="file" name="attachment">
+
+                <!-- Скрытое поле для защиты от спама -->
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                <!-- Перенаправление после отправки -->
+                <input type="hidden" name="_next" value="https://lptelinho555.github.io/consulting-site/thank-you.html">
+
+                <button type="submit">Отправить сообщение</button>
+            </form>
+            <p class="note">Эта форма использует сторонний сервис для сбора отправлений. Бесплатный тариф включает уведомления по электронной почте, загрузку файлов, защиту от спама и экспорт CSV.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Luiz&nbsp;Paulo&nbsp;Alves&nbsp;Pinto. Все права защищены.</p>
+    </footer>
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

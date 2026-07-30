@@ -65,6 +65,22 @@ emitido (leva alguns minutos após o DNS propagar).
   `js/main.js`. Alterar um exige alterar o outro.
 - **Sem recursos externos**: nada de CDN, fontes ou scripts de terceiros — a
   CSP em cada página bloqueia. Ao adicionar algo externo, atualize a CSP.
+- **`404.html` usa caminhos absolutos** (`/css/style.css`). É obrigatório: o
+  GitHub Pages serve a mesma 404 para qualquer profundidade, então caminho
+  relativo quebraria em `/pt/blog/…`. Consequência: no endereço provisório
+  `usuario.github.io/lp-consulting/` a 404 aparece **sem estilo**, porque o
+  site não está na raiz do domínio. Com o domínio próprio isso se corrige
+  sozinho. Não "conserte" trocando por caminhos relativos.
+
+## Indexação
+
+O site sobe com a indexação desligada (`scripts/set-indexing.py off`), para o
+Google não indexar o endereço provisório e depois concorrer com o domínio
+definitivo. Depois de apontar o domínio e confirmar que tudo abre:
+
+```bash
+python scripts/set-indexing.py on
+```
 
 ## Formulário de contato
 

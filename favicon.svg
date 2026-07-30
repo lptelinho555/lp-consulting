@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Luiz Paulo Consulting">
+  <rect width="64" height="64" rx="12" fill="#013d75"/>
+  <!-- ondas de choque -->
+  <circle cx="32" cy="36" r="20" fill="none" stroke="#007acc" stroke-width="2.5" opacity=".45"/>
+  <circle cx="32" cy="36" r="13" fill="none" stroke="#4aa3dc" stroke-width="2.5" opacity=".7"/>
+  <!-- bancada -->
+  <path d="M8 52h20V42h12v10h16" fill="none" stroke="#ffffff" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- furo e detonacao -->
+  <circle cx="32" cy="30" r="5" fill="#ffb020"/>
+  <g stroke="#ffb020" stroke-width="3" stroke-linecap="round">
+    <path d="M32 14v6"/>
+    <path d="M18.5 18.5l4.2 4.2"/>
+    <path d="M45.5 18.5l-4.2 4.2"/>
+  </g>
+</svg>

@@ -76,13 +76,19 @@ a:hover {
 }
 
 .navbar li {
-    margin-inline-start: 20px;
+    margin-inline-start: 14px;
 }
 
 .navbar a {
     color: var(--light-color);
     font-weight: 500;
     transition: var(--transition);
+}
+
+/* Rotulos nunca partem no meio ("Como Funciona" virava duas linhas) */
+.navbar .nav-links a {
+    white-space: nowrap;
+    font-size: 0.95rem;
 }
 
 .navbar a:hover {
@@ -132,15 +138,17 @@ a:hover {
 
 /* Language switcher */
 .language-switcher {
-    margin-inline-start: 30px;
+    margin-inline-start: 18px;
 }
 
 .language-switcher a {
-    font-size: 0.9rem;
-    padding: 6px 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 5px 7px;
     background-color: var(--secondary-color);
     border-radius: 3px;
-    margin-inline-start: 5px;
+    margin-inline-start: 3px;
     color: var(--light-color);
 }
 
@@ -379,40 +387,141 @@ section h2::after {
 footer {
     background-color: var(--primary-color);
     color: var(--light-color);
-    padding: 20px 0;
-    text-align: center;
+    padding: 45px 0 0;
     margin-top: 60px;
 }
 
 footer p {
+    font-size: 0.85rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding-bottom: 35px;
+}
+
+.footer-grid h4 {
     font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    color: #9dc6e8;
+}
+
+.footer-grid ul {
+    list-style: none;
+}
+
+.footer-grid li {
+    margin-bottom: 8px;
+}
+
+.footer-grid a {
+    color: var(--light-color);
+    font-size: 0.9rem;
+}
+
+.footer-grid a:hover {
+    color: #9dc6e8;
+}
+
+.footer-brand p {
+    color: #c8dcee;
+    max-width: 34ch;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 18px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #c8dcee;
+}
+
+.footer-bottom a {
+    color: #c8dcee;
+    text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+    color: var(--light-color);
+}
+
+/* Paginas de texto corrido (privacidade, 404) */
+.prose {
+    max-width: 70ch;
+}
+
+.prose h3 {
+    color: var(--primary-color);
+    font-size: 1.15rem;
+    margin: 28px 0 10px;
+}
+
+.prose p,
+.prose li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.prose ul {
+    padding-inline-start: 22px;
+}
+
+.prose .updated {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Pagina 404 */
+.error-page {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.error-page .code {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.error-page .lang-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.error-page .lang-list a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.error-page .lang-list a:hover {
+    background-color: var(--accent-color);
+    text-decoration: none;
 }
 
 /* ==========================================================================
    Responsivo
    ========================================================================== */
 
-/* Tablet */
-@media (max-width: 900px) {
-    .navbar li {
-        margin-inline-start: 14px;
-    }
-
-    .language-switcher {
-        margin-inline-start: 16px;
-    }
-
-    .hero {
-        padding: 70px 0 60px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-}
-
-/* Mobile — menu vira painel colapsavel */
-@media (max-width: 768px) {
+/* O menu inline nao cabe e vira painel colapsavel.
+   Limite em 1024px: logo + 6 links + 6 idiomas exigem ~900px de barra. */
+@media (max-width: 1024px) {
     .nav-toggle {
         display: flex;
     }
@@ -465,6 +574,17 @@ footer p {
         padding: 10px 14px;
     }
 
+    .hero {
+        padding: 70px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile — reduz espacamento e tipografia */
+@media (max-width: 768px) {
     section {
         padding: 40px 0;
     }

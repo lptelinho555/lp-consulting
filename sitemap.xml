@@ -66,4 +66,12 @@
   <url><loc>https://SEU-DOMINIO.com/ar/blog/post1.html</loc></url>
   <url><loc>https://SEU-DOMINIO.com/ar/blog/post2.html</loc></url>
   <url><loc>https://SEU-DOMINIO.com/ar/blog/post3.html</loc></url>
+
+  <!-- Privacy policy -->
+  <url><loc>https://SEU-DOMINIO.com/privacy.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/pt/privacidade.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/es/privacidad.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/zh/privacy.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/ru/privacy.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/ar/privacy.html</loc></url>
 </urlset>

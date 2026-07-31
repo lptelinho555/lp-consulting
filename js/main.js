@@ -40,9 +40,9 @@
     });
 
     // Se voltar para desktop com o menu aberto, limpa o estado.
-    // 1024px deve acompanhar o breakpoint do menu em css/style.css
+    // 1200px deve acompanhar o breakpoint do menu em css/style.css
     window.addEventListener('resize', function () {
-        if (window.innerWidth > 1024) {
+        if (window.innerWidth > 1200) {
             setOpen(false);
         }
     });

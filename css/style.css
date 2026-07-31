@@ -56,11 +56,14 @@ a:hover {
     width: 100%;
 }
 
+/* A barra usa mais largura que o conteudo: sao 7 itens + 6 idiomas,
+   e o texto do menu em russo e portugues nao cabe em 1100px. */
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1240px;
 }
 
 .navbar .logo {
@@ -88,7 +91,7 @@ a:hover {
 /* Rotulos nunca partem no meio ("Como Funciona" virava duas linhas) */
 .navbar .nav-links a {
     white-space: nowrap;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .navbar a:hover {
@@ -142,10 +145,10 @@ a:hover {
 }
 
 .language-switcher a {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.03em;
-    padding: 5px 7px;
+    padding: 4px 6px;
     background-color: var(--secondary-color);
     border-radius: 3px;
     margin-inline-start: 3px;
@@ -549,8 +552,9 @@ footer p {
    ========================================================================== */
 
 /* O menu inline nao cabe e vira painel colapsavel.
-   Limite em 1024px: logo + 6 links + 6 idiomas exigem ~900px de barra. */
-@media (max-width: 1024px) {
+   Limite em 1200px: sao 7 links + 6 idiomas, e o portugues e o russo
+   precisam de ~1050px de barra. Medido, nao estimado. */
+@media (max-width: 1200px) {
     .nav-toggle {
         display: flex;
     }

@@ -74,4 +74,12 @@
   <url><loc>https://SEU-DOMINIO.com/zh/privacy.html</loc></url>
   <url><loc>https://SEU-DOMINIO.com/ru/privacy.html</loc></url>
   <url><loc>https://SEU-DOMINIO.com/ar/privacy.html</loc></url>
+
+  <!-- Sampling -->
+  <url><loc>https://SEU-DOMINIO.com/sampling.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/pt/amostragem.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/es/muestreo.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/zh/sampling.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/ru/sampling.html</loc></url>
+  <url><loc>https://SEU-DOMINIO.com/ar/sampling.html</loc></url>
 </urlset>

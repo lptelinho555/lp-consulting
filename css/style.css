@@ -479,6 +479,35 @@ footer p {
     font-style: italic;
 }
 
+/* Aviso de rascunho — remover junto com o conteudo provisorio */
+.draft-notice {
+    background-color: #fff4d6;
+    border-inline-start: 4px solid #e0a800;
+    color: #6b4e00;
+    padding: 14px 18px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+/* Botao de acao dentro do texto */
+.cta-inline {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px 26px;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    border-radius: 4px;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.cta-inline:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-decoration: none;
+}
+
 /* Pagina 404 */
 .error-page {
     text-align: center;

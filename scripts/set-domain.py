@@ -12,6 +12,9 @@ import re
 import sys
 
 PLACEHOLDER = "SEU-DOMINIO.com"
+# Endereco provisorio do GitHub Pages. O redirect dos formularios aponta para
+# ele enquanto nao ha dominio, entao precisa ser trocado junto.
+TEMPORARIO = "lptelinho555.github.io/lp-consulting"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 EXTS = {".html", ".xml", ".txt"}
 
@@ -50,9 +53,10 @@ def main():
         if ".git" in path.parts:
             continue
         text = path.read_text(encoding="utf-8")
-        if old not in text:
+        novo = text.replace(old, new).replace(TEMPORARIO, new)
+        if novo == text:
             continue
-        path.write_text(text.replace(old, new), encoding="utf-8")
+        path.write_text(novo, encoding="utf-8")
         changed.append(str(path.relative_to(ROOT)))
 
     # CNAME: e o que diz ao GitHub Pages qual dominio servir
